@@ -1,0 +1,36 @@
+package adimeht;
+import javax.swing.JOptionPane;
+public class Calculator {
+	public static void main (String[] args)
+	{
+		String valone= JOptionPane.showInputDialog("What is your first value? ");
+		int val=Integer.parseInt(valone);
+		String valtwo= JOptionPane.showInputDialog("What is your second value? ");
+		int val2=Integer.parseInt(valtwo);
+		String input= JOptionPane.showInputDialog("put * for multiplication, + for addition, - for subtraction, and / for division ");
+		String ans;
+		if (input.equals("+"))
+		{
+			ans+= "Your answer is "+(val+val2);
+		}
+		else if (input.equals("*"))
+		{
+			ans= "Your answer is "+(val*val2);
+		}
+		else if (input.equals("/"))
+		{
+			ans= "Your answer is "+(val/val2);
+		}
+		else if (input.equals("-"))
+		{
+			ans= "Your answer is "+(val-val2);
+		}
+		else 
+		{
+			ans= "Error. Try again";
+		}
+		
+		JOptionPane.showMessageDialog(null,ans);
+		
+	}
+}
