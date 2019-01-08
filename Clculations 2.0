@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h1>Simple Online Calculator</h1>
+<p>Type in your first number</p>
+<form name=“formcalc”>
+Number 1: <input type="text" name=“n1">
+<br>
+<p>Type in your first number</p>
+Number 2: <input type="text" name="n2”>
+<br>
+<input type="submit" value="Multiplication" onClick=“prodValues()”>
+<input type="submit" value="Addition" onClick=“sumValues()”>
+<input type="submit" value="Subtraction" onClick=“diffValues()”>
+<input type="submit" value="Division" onClick=“quotientValues()”>
+<p>Answer</p>
+<input type="text" name=“res”><br>
+</form>
+<script type = “text/javascript”>
+	function sumValues()
+	{
+		var num1, num2, result;
+		num1=Number(document.formcalc.num1.value);
+		num2=Number(document.formcalc.num2.value);
+		result=num1+num2;
+document.formcalc.res.value=result; 
+		
+	}
+	function prodValues()
+	{
+		var num1, num2, result;
+		num1=Number(document.formcalc.num1.value);
+		num2=Number(document.formcalc.num2.value);
+		result=num1*num2;
+document.formcalc.res.value=result; 
+		
+	}
+	function diffValues()
+	{
+		var num1, num2, result;
+		num1=Number(document.formcalc.num1.value);
+		num2=Number(document.formcalc.num2.value);
+		result=num1-num2;
+document.formcalc.res.value=result; 
+		
+	}
+	function quotientValues()
+	{
+		var num1, num2, result;
+		num1=Number(document.formcalc.num1.value);
+		num2=Number(document.formcalc.num2.value);
+		result=num1/num2;
+document.formcalc.res.value=result; 
+		
+	}
+</body>
+</html>
