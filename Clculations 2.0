@@ -1,60 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
-<h1>Simple Online Calculator</h1>
-<p>Type in your first number</p>
-<form name=“formcalc”>
-Number 1: <input type="text" name=“n1">
+\<FORM NAME="Calc">
+
+<INPUT TYPE="text"   NAME="box" Size="16">
 <br>
-<p>Type in your first number</p>
-Number 2: <input type="text" name="n2”>
+<TR>
+<TD>
+<INPUT TYPE="button" NAME="1"   VALUE="  1  " OnClick="Calc.box.value += '1'">
+<INPUT TYPE="button" NAME="2"   VALUE="  2  " OnCLick="Calc.box.value += '2'">
+<INPUT TYPE="button" NAME="3" VALUE="  3  " OnClick="Calc.box.value += '3'">
+<INPUT TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.box.value += ' + '">
 <br>
-<input type="submit" value="Multiplication" onClick=“prodValues()”>
-<input type="submit" value="Addition" onClick=“sumValues()”>
-<input type="submit" value="Subtraction" onClick=“diffValues()”>
-<input type="submit" value="Division" onClick=“quotientValues()”>
-<p>Answer</p>
-<input type="text" name=“res”><br>
-</form>
-<script type = “text/javascript”>
-	function sumValues()
-	{
-		var num1, num2, result;
-		num1=Number(document.formcalc.num1.value);
-		num2=Number(document.formcalc.num2.value);
-		result=num1+num2;
-document.formcalc.res.value=result; 
-		
-	}
-	function prodValues()
-	{
-		var num1, num2, result;
-		num1=Number(document.formcalc.num1.value);
-		num2=Number(document.formcalc.num2.value);
-		result=num1*num2;
-document.formcalc.res.value=result; 
-		
-	}
-	function diffValues()
-	{
-		var num1, num2, result;
-		num1=Number(document.formcalc.num1.value);
-		num2=Number(document.formcalc.num2.value);
-		result=num1-num2;
-document.formcalc.res.value=result; 
-		
-	}
-	function quotientValues()
-	{
-		var num1, num2, result;
-		num1=Number(document.formcalc.num1.value);
-		num2=Number(document.formcalc.num2.value);
-		result=num1/num2;
-document.formcalc.res.value=result; 
-		
-	}
-</body>
-</html>
+<INPUT TYPE="button" NAME="four"  VALUE="  4  " OnClick="Calc.box.value += '4'">
+<INPUT TYPE="button" NAME="five"  VALUE="  5  " OnCLick="Calc.box.value += '5'">
+<INPUT TYPE="button" NAME="six"   VALUE="  6  " OnClick="Calc.box.value += '6'">
+<INPUT TYPE="button" NAME="minus" VALUE="  -  " OnClick="Calc.box.value += ' - '">
+<br>
+<INPUT TYPE="button" NAME="seven" VALUE="  7  " OnClick="Calc.box.value += '7'">
+<INPUT TYPE="button" NAME="eight" VALUE="  8  " OnCLick="Calc.box.value += '8'">
+<INPUT TYPE="button" NAME="nine"  VALUE="  9  " OnClick="Calc.box.value += '9'">
+<INPUT TYPE="button" NAME="times" VALUE="  x  " OnClick="Calc.box.value += ' * '">
+<br>
+<INPUT TYPE="button" NAME="clear" VALUE="  c  " OnClick="Calc.box.value = ''">
+<INPUT TYPE="button" NAME="zero"  VALUE="  0  " OnClick="Calc.box.value += '0'">
+<INPUT TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.box.value = eval(Calc.box.value)">
+<INPUT TYPE="button" NAME="div"   VALUE="  /  " OnClick="Calc.box.value += ' / '">
+<br>
